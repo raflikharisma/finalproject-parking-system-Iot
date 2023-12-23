@@ -1,0 +1,16 @@
+#card {
+    border: 3px solid black;
+    box-shadow: 10px 10px 5px lightblue;
+    
+}
+
+@keyframes moveForward {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(100px); }
+    100% { transform: translateX(0); }
+  }
+
+  #truck {
+    display: inline-block;
+    animation: moveForward 2s linear infinite;
+  }
