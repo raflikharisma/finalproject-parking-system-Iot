@@ -27,7 +27,7 @@ const HumidityCard = () => {
   return (
       <div id="card" class="max-w-sm rounded-md mt-8 ml-8">
         {/* <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains"></img> */}
-        <div className="px-6 py-4">
+        <div class="px-6 py-4">
           <div class="font-sans font-bold text-3xl mb-2 text-start border-b-2 border-black text-black pb-3 ">Distance <span id="truck">🚚 🚙</span></div>
           <p class="text-black-200 text-3xl text-center pt-3">{`${humidityData}`}</p>
         </div>

@@ -14,3 +14,8 @@
     display: inline-block;
     animation: moveForward 2s linear infinite;
   }
+
+#chart {
+  width: 700px;
+  height: 400px;
+}
