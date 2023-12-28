@@ -23,26 +23,24 @@ const RealTimeGraph = () => {
             myChart.destroy();
         }
      
-        const intervalId = setInterval(fetchData, 5000);
-
-    
+        const intervalId = setInterval(fetchData, 1000);
         return () => clearInterval(intervalId);
     }, []);
 
     const chartData = {
-        labels: data.map(entry => entry.time), // Assuming 'timestamp_column' is the column name
+        labels: data.map(entry => entry.time), 
         datasets: [{
             label: 'Graph Jarak',
-            data: data.map(entry => entry.jarak), // Assuming 'range_column' is the column name
-            borderColor: 'rgba(75,192,192,1)',
-            borderWidth: 4,
+            data: data.map(entry => entry.jarak), 
+            borderColor: "black",
+            borderWidth: 2,
             fill: false,
             tension: 0.1,
         }],
     };
 
     return (
-        <div id='chart' className='border border-black'>
+        <div id='chart' className='rounded-md '>
             <Line data={chartData} />
         </div>
     );

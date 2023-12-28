@@ -1,15 +1,13 @@
 
 import "./App.css";
 import React from "react";
-import HumidityCard from "./view/range";
-import RealtimeGraph from "./view/graph"
+import Dashboard from "./view/dashboard";
+
+
 
 const App = () => {
   return (
-    <div>
-      <HumidityCard />
-      <RealtimeGraph />
-    </div>
+    <Dashboard />
   );
 };
 
